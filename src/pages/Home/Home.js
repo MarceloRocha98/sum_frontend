@@ -64,7 +64,7 @@ export default function Home(){
             const ag = aggregateRef.current;
             updateOnClock();
             setCOntrolUpdate(c=>!c)
-        }, 10*1000);
+        }, 30*1000);
         return () => clearInterval(id);
 
     }, [controlUpdate]);
@@ -139,7 +139,7 @@ export default function Home(){
                     }} 
                      label="Volume"
                      variant="outlined" />
-                     
+
                     <TextField id="outlined-basic"
                      onChange={e=>{
                         setPrice(e.target.value.replace(/ /g,''));
